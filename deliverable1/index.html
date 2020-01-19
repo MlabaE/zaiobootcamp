@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cartModal.css">
+    <link rel="stylesheet" href="needHelpModal.css">
+</head>
+
+<body>
+
+
+    <h1>HICKIES ORIGINALS</h1>
+
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <!--5 star rating-->
+                    <div id="rating">
+                        <span class="fa fa-star checked" style="font-size: 200%;"></span>
+                        <span class="fa fa-star checked" style="font-size: 200%;"></span>
+                        <span class="fa fa-star checked" style="font-size: 200%;"></span>
+                        <span class="fa fa-star" style="font-size: 200%;"></span>
+                        <span class="fa fa-star" style="font-size: 200%;"></span>
+                    </div>
+                </td>
+                <td>
+                    <p style="color:grey"> 1,293 reviews</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <p style="color: rgb(250, 34, 34); font-size: 300%;">$14.99</p>
+
+                </td>
+                <td>
+                    <p style="color: grey;">$17.99</p>
+                </td>
+                <td>
+                    <p style="color: grey;">25% OFF</p>
+                </td>
+            </tr>
+        </table>
+
+        <h5><b>ONLINE EXCLUSIVE</b></h4><br>
+
+
+            <!-- <h4><b>COLOR :</b> red</h4><br> -->
+            <h4><b>COLOR: </b></h4>
+            <h4 id="label" ><b>select color</b></h4><br>
+
+            <!--color display-->
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <span class="dot" style="background-color: chartreuse;" onclick="myFunction1()"></span>
+                            <span class="dot" style="background-color: coral;" onclick="myFunction2()"></span>
+                            <span class="dot" style="background-color: cyan;" onclick="myFunction3()"></span>
+                            <span class="dot" style="background-color: deeppink;" onclick="myFunction4()"></span>
+                            <span class="dot" style="background-color: orange;" onclick="myFunction5()"></span>
+                            <span class="dot" style="background-color: red;" onclick="myFunction6()"></span>
+                            <span class="dot" style="background-color: yellow;" onclick="myFunction7()"></span>
+                            <span class="dot" style="background-color: black;" onclick="myFunction8()"></span>
+                            <span class="dot" style="background-color: blueviolet;" onclick="myFunction9()"></span>
+                            <span class="dot" style="background-color: chocolate;" onclick="myFunction10()"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <span class="dot" style="background-color:blue" onclick="myFunction11()"></span>
+                            <span class="dot" style="background-color: green;" onclick="myFunction12()"></span>
+                            <span class="dot" style="background-color: grey;" onclick="myFunction13()"></span>
+                            <span class="dot" style="background-color: maroon;" onclick="myFunction14()"></span>
+                            <span class="dot" style="background-color: plum;" onclick="myFunction15()"></span>
+                            <span class="dot" style="background-color: darkorange;" onclick="myFunction16()"></span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div>
+                <br>
+                <a href="#"><b>Size Guide</b></a><br>
+                <a href="#"><b>Your Custom Fit</b></a><br><br>
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <br>
+                    </td>
+                    <td>
+                        <button type="button" id="cartBtn">Add To Cart</button>
+
+                        <div id="cartModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1>Add To Cart</h1>
+                            <br><br><br>
+                            <hr>
+                            <h2 id="cartLabel">selected color</h2>
+                            <br><br>
+                            <hr>
+                            <h3>Choose Quantity:</h3>
+                            <input type="number" min="1" placeholder="1">
+                        </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+
+            <hr style="border: 1px solid black;">
+
+            <div>
+                <a href="#" ><b>DETAILS</b></a>
+                <br>
+            </div>
+
+            <hr style="border: 1px solid black;">
+
+            <div>
+                <a href="#" id="needHelplnk" ><b>Need Help?</b></a><br>
+                <div id="needHelpModal" class="modal">
+                    <div class="modal-content">
+                        <div style="background-image: url('img/help.png');">
+                            <span class="close">&times;</span>
+                            <h1>Need help?</h1>
+                            <br><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+                        <div>
+                            <hr>
+                            <p>Select a color and add to the cart. Select quantity and proceed to checkout</p>
+                            <p>Contact us on 0800-helpline</p>
+                            <p>all request for help will be attended to as soon as possible.</p>
+                        </div>
+                    </div>
+                    </div>
+    
+
+                <a href="#"><b>Shipping & Returns</b></a>
+                <br>
+            </div>
+
+<script src="displayClrName.js"></script>
+<script src="cartModal.js"></script>
+<script src="needHelp.js"></script>
+
+</body>
+
+</html>
